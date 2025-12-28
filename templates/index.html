@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Remedy Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🏡 Home Remedy Finder</h1>
+
+    <form method="post">
+        <input type="text" name="problem" placeholder="Enter your problem..." required>
+        <button type="submit">Find Remedy</button>
+    </form>
+
+    {% if result %}
+        <h2>{{ result.title }}</h2>
+        <ul>
+            {% for step in result.steps %}
+                <li>{{ step }}</li>
+            {% endfor %}
+        </ul>
+    {% elif result == None %}
+    {% else %}
+        <p>No remedy found 😔</p>
+    {% endif %}
+</body>
+</html>
