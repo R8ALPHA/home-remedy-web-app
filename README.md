@@ -46,6 +46,8 @@ The app supports partial keyword matching, allowing users to search naturally wi
  - │
  - └── README.md
 
+ ---
+
 ## How to Run the App Locally 
 
 1. Clone the repository:
@@ -62,18 +64,30 @@ The app supports partial keyword matching, allowing users to search naturally wi
    python app.py
 
 5. Open your browser and visit:
-   http://127.0.0.1:5000
+   **http://127.0.0.1:5000**
+
+---
 
 ## 🧪 Example Inputs
 
-Try entering natural phrases like:
+Try entering **natural phrases** like:
 
-- cold
-- bad stomach ache
-- feeling stressed
-- cant sleep at night
-- muscle pain after workout
-- nose bleeding suddenly
+- **cold**
+- **bad stomach ache**
+- **feeling stressed**
+- **cant sleep at night**
+- **muscle pain after workout**
+- **nose bleeding suddenly**
+
+---
+
+## ⚠️ Disclaimer
+
+This application provides **general home remedies for educational purposes only**.
+It is **not a substitute for professional medical advice, diagnosis, or treatment.**
+Always consult a qualified healthcare provider for serious or persistent conditions.
+
+
 
 
 
