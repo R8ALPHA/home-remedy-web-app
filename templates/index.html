@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home Remedy Finder</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>Home Remedy App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>🏡 Home Remedy Finder</h1>
 
-    <form method="post">
-        <input type="text" name="problem" placeholder="Enter your problem..." required>
+    <header>
+        <h1>🏠 Home Remedy Finder</h1>
+        <p>Simple. Natural. Effective.</p>
+    </header>
+
+    <form method="POST">
+        <input type="text" name="problem" placeholder="Enter your problem (e.g. cold)" required>
         <button type="submit">Find Remedy</button>
     </form>
 
-    {% if result %}
-        <h2>{{ result.title }}</h2>
-        <ul>
-            {% for step in result.steps %}
-                <li>{{ step }}</li>
-            {% endfor %}
-        </ul>
-    {% elif result == None %}
-    {% else %}
-        <p>No remedy found 😔</p>
+    {% if remedy %}
+        <div class="result">
+            <h2>Steps</h2>
+            <ol>
+                {% for step in remedy.steps %}
+                    <li>{{ step }}</li>
+                {% endfor %}
+            </ol>
+        </div>
     {% endif %}
+
 </body>
 </html>
