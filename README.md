@@ -33,3 +33,54 @@ The app supports partial keyword matching, allowing users to search naturally wi
 
 ## 📁 Project Structure
 
+- home_remedy_app/
+ - │
+ - ├── app.py
+ - ├── remedies.py
+ - │
+ - ├── templates/
+ - │   └── index.html
+ - │
+ - ├── static/
+ - │   └── style.css
+ - │
+ - └── README.md
+
+## How to Run the App Locally 
+
+1. Clone the repository:
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+
+
+2. Navigate into the project folder:
+   cd home_remedy_app
+
+3. Install Flask (if not already installed):
+   pip install flask
+
+4. Run the application:
+   python app.py
+
+5. Open your browser and visit:
+   http://127.0.0.1:5000
+
+## 🧪 Example Inputs
+
+Try entering natural phrases like:
+
+- cold
+- bad stomach ache
+- feeling stressed
+- cant sleep at night
+- muscle pain after workout
+- nose bleeding suddenly
+
+
+
+   
+   
+
+
+   
+
+
