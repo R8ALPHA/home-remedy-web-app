@@ -16,16 +16,15 @@
         <button type="submit">Find Remedy</button>
     </form>
 
-    {% if remedy %}
-        <div class="result">
-            <h2>Steps</h2>
-            <ol>
-                {% for step in remedy.steps %}
-                    <li>{{ step }}</li>
-                {% endfor %}
-            </ol>
-        </div>
+    {% if remedy_steps %}
+        <h2>Remedy Steps:</h2>
+        <ol>
+            {% for step in remedy_steps %}
+                <li>{{ step }}</li>
+            {% endfor %}
+        </ol>
+    {% elif problem %}
+        <p>No remedy found. Try different wording.</p>
     {% endif %}
-
 </body>
 </html>
